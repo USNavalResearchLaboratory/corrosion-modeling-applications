@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Root>
+  <Data>
+    <Name>Magnesium</Name>
+    <PotentialValue>-1.64</PotentialValue>
+    <ActivityCategory>A</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Zinc</Name>
+    <PotentialValue>-1.03</PotentialValue>
+    <ActivityCategory>B</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Beryllium</Name>
+    <PotentialValue>-0.96</PotentialValue>
+    <ActivityCategory>C</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>AA 3003-H</Name>
+    <PotentialValue>-0.79</PotentialValue>
+    <ActivityCategory>D</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>AA 6061-T</Name>
+    <PotentialValue>-0.76</PotentialValue>
+    <ActivityCategory>E</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Cadmium</Name>
+    <PotentialValue>-0.69</PotentialValue>
+    <ActivityCategory>C</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Carbon Steel</Name>
+    <PotentialValue>-0.61</PotentialValue>
+    <ActivityCategory>F</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Cast Iron</Name>
+    <PotentialValue>-0.61</PotentialValue>
+    <ActivityCategory>G</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>High-Strength,Low-Alloy Steel (HSLA)</Name>
+    <PotentialValue>-0.60</PotentialValue>
+    <ActivityCategory>F</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Stainless Steel, Type 430, active</Name>
+    <PotentialValue>-0.57</PotentialValue>
+    <ActivityCategory>I</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Stainless Steel, Type 304, active</Name>
+    <PotentialValue>-0.53</PotentialValue>
+    <ActivityCategory>K</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Stainless Steel, Type 410, active</Name>
+    <PotentialValue>-0.52</PotentialValue>
+    <ActivityCategory>I</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Austenitic Cast Iron</Name>
+    <PotentialValue>-0.48</PotentialValue>
+    <ActivityCategory>G</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 464 (Naval Rolled Brass)</Name>
+    <PotentialValue>-0.40</PotentialValue>
+    <ActivityCategory>L</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 954 (Aluminum Bronze)</Name>
+    <PotentialValue>-0.36</PotentialValue>
+    <ActivityCategory>M</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper</Name>
+    <PotentialValue>-0.36</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 230 (Red Brass)</Name>
+    <PotentialValue>-0.36</PotentialValue>
+    <ActivityCategory>N</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Tin</Name>
+    <PotentialValue>-0.325</PotentialValue>
+    <ActivityCategory>H</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Pb-Sn Solder (50/50)</Name>
+    <PotentialValue>-0.309</PotentialValue>
+    <ActivityCategory>H</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 903 (Bronze, Navy G)</Name>
+    <PotentialValue>-0.31</PotentialValue>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 442 (Admiralty Brass)</Name>
+    <PotentialValue>-0.29</PotentialValue>
+    <ActivityCategory>N</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 863 (Manganese Bronze)</Name>
+    <PotentialValue>-0.29</PotentialValue>
+    <ActivityCategory>M</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 706 (90-10 Cu-Ni)</Name>
+    <PotentialValue>-0.28</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 710 (80-20 Cu-Ni)</Name>
+    <PotentialValue>-0.27</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 655 (Silicon Bronze)</Name>
+    <PotentialValue>-0.27</PotentialValue>
+    <ActivityCategory>N</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 770 (Nickel Silver)</Name>
+    <PotentialValue>-0.27</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 715 (70-30 Cu-Ni)</Name>
+    <PotentialValue>-0.25</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 922 (Bronze, Navy M)</Name>
+    <PotentialValue>-0.23</PotentialValue>
+    <ActivityCategory>N</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Stainless Steel, Type 430, passive</Name>
+    <PotentialValue>-0.22</PotentialValue>
+    <ActivityCategory>I</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Lead</Name>
+    <PotentialValue>-0.22</PotentialValue>
+    <ActivityCategory>G</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 630 (Nickel Aluminum Bronze)</Name>
+    <PotentialValue>-0.19</PotentialValue>
+    <ActivityCategory>M</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 200</Name>
+    <PotentialValue>-0.15</PotentialValue>
+    <ActivityCategory>P</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Titanium (Compressed powder)</Name>
+    <PotentialValue>-0.15</PotentialValue>
+    <ActivityCategory>Q</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Copper Alloy 976 (Nickel Silver Bronze)</Name>
+    <PotentialValue>-0.14</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Silver</Name>
+    <PotentialValue>-0.13</PotentialValue>
+    <ActivityCategory>R</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 600 (Ni-Cr)</Name>
+    <PotentialValue>-0.12</PotentialValue>
+    <ActivityCategory>P</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Titanium (Solid)</Name>
+    <PotentialValue>-0.10</PotentialValue>
+    <ActivityCategory>Q</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Stainless Steel, Type 304, passive</Name>
+    <PotentialValue>-0.08</PotentialValue>
+    <ActivityCategory>K</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 500 (Monel K500)</Name>
+    <PotentialValue>-0.08</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 400 (Monel 400)</Name>
+    <PotentialValue>-0.08</PotentialValue>
+    <ActivityCategory>O</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 276 (Hastelloy C)</Name>
+    <PotentialValue>-0.08</PotentialValue>
+    <ActivityCategory>P</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Stainless Steel, Type 316, passive</Name>
+    <PotentialValue>-0.05</PotentialValue>
+    <ActivityCategory>K</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 20 (Carpenter 20)</Name>
+    <PotentialValue>-0.04</PotentialValue>
+    <ActivityCategory>P</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Nickel Alloy 825 (Incoloy 825)</Name>
+    <PotentialValue>-0.04</PotentialValue>
+    <ActivityCategory>P</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Zirconium</Name>
+    <PotentialValue>-0.04</PotentialValue>
+    <ActivityCategory>Q</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Gold</Name>
+    <PotentialValue>0.14</PotentialValue>
+    <ActivityCategory>S</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Platinum</Name>
+    <PotentialValue>0.15</PotentialValue>
+    <ActivityCategory>S</ActivityCategory>
+  </Data>
+  <Data>
+    <Name>Graphite</Name>
+    <PotentialValue>0.25</PotentialValue>
+    <ActivityCategory>T</ActivityCategory>
+  </Data>
+</Root>

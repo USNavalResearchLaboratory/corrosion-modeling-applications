@@ -1,0 +1,50 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CorrosionModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="CorrosionModel.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="650" Height="650">
+
+    <Grid HorizontalAlignment="Left" Width="640">
+        <Button x:Name="CalculateButton" Margin="365,295,0,0" Height="53" Width="226" Click="CalculateButton_Click" IsEnabled="False" VerticalAlignment="Top">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Segoe UI" Text="4. Load corrosion potentials and calculate difference." FontWeight="Bold"/>
+        </Button>
+
+
+        <ComboBox x:Name="ListOfAnodes" Margin="365,82,0,0" Width="226" SelectionChanged="ListOfAnodes_SelectionChanged" IsEnabled="False">
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" Margin="365,58,0,0" Text="2. Select anode material." TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <ComboBox x:Name="ListOfCathodes" Margin="365,198,0,0" Width="226" IsEnabled="False" SelectionChanged="ListOfCathodes_SelectionChanged">
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" Margin="365,174,0,0" Text="3. Select cathode material." TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <TextBox x:Name="AnodePotential" HorizontalAlignment="Left" Margin="365,121,0,0" Text="V (SCE)" VerticalAlignment="Top" Height="32" Width="226" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox x:Name="CathodePotential" HorizontalAlignment="Left" Margin="365,241,0,0" Text="V (SCE)" VerticalAlignment="Top" Height="31" Width="226" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox x:Name="PotentialDifference" HorizontalAlignment="Left" Margin="365,363,0,0" Text="Potential Difference" VerticalAlignment="Top" Height="32" Width="226" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox x:Name="CaptionText" HorizontalAlignment="Left" Height="44" Margin="10,393,0,0" Text="Corrosion potential values obtained from coupons exposed to flowing seawater (4 m/s) at T = 25 C." VerticalAlignment="Top" Width="326" IsReadOnly="True" FontSize="12" TextWrapping="Wrap" BorderThickness="0,0,0,0" TextAlignment="Center" FontStyle="Italic"/>
+
+        <CommandBar IsOpen="True">
+            <AppBarToggleButton x:Name="LoadCustomFile" Icon="Upload" Label="Custom" Click="AppBar_LoadCustom_Button_Click" VerticalAlignment="Center" />
+            <AppBarToggleButton x:Name="LoadDefaultFiles" Icon="Accept" Label="Default" Click="AppBar_LoadDefault_Button_Click" HorizontalAlignment="Center"/>
+            <CommandBar.Content>
+                <TextBlock Text="1. Select electrochemical potential data:" Margin="12,14" FontWeight="Bold"/>
+            </CommandBar.Content>
+        </CommandBar>
+        <Image x:Name="ElectrodeArrangement" HorizontalAlignment="Left" Height="330" Margin="20,58,0,0" VerticalAlignment="Top" Width="352" Source="/Assets/ElectrodeArrangement.png"/>
+        <TextBox x:Name="CompTextBox" HorizontalAlignment="Center" Margin="0,459,0,0" Text="MIL-STD-889C Table I Galvanic Compatibility Guide for joined structural metals and alloys" VerticalAlignment="Top" IsReadOnly="True" Height="31" Width="640" TextWrapping="Wrap" TextAlignment="Center" BorderThickness="0,0,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="SW_Textbox" HorizontalAlignment="Left" Height="52" Margin="270,491,0,0" Text="Seawater" VerticalAlignment="Top" Width="70" FontSize="12" TextAlignment="Center" IsTextPredictionEnabled="False" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox x:Name="MA_Textbox" HorizontalAlignment="Left" Margin="352,491,0,0" Text="Marine Atmosphere" VerticalAlignment="Top" TextWrapping="Wrap" Height="52" Width="90" FontSize="12" TextAlignment="Center" IsTextPredictionEnabled="False" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox x:Name="IA_TextBox" HorizontalAlignment="Left" Margin="174,489,0,0" Text="Industrial Atmosphere" VerticalAlignment="Top" TextWrapping="Wrap" Height="52" Width="90" FontSize="12" TextAlignment="Center" IsTextPredictionEnabled="False" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <Rectangle x:Name="IA_Rectangle" HorizontalAlignment="Left" Height="30" Margin="204,531,0,0" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle x:Name="SW_Rectangle" HorizontalAlignment="Left" Height="30" Margin="290,531,0,0" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle x:Name="MA_Rectangle" HorizontalAlignment="Left" Height="30" Margin="382,531,0,0" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Button x:Name="CorrosionPreventionButton" Margin="0,587,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="226" Height="53" IsEnabled="False" Click="CorrosionPreventionButton_Click">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Segoe UI" Text="5. Corrosion Prevention Recommendations." FontWeight="Bold"/>
+        </Button>
+    </Grid>
+</Page>
