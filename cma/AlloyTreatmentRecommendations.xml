@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Data>
+		<ActivityCategory>A</ActivityCategory>
+		<AlloyType>Magnesium</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>	
+		<Item>a. Anodic coating (ASTM D1732) post treated with an alkali-resistant paint or resin coating system.</Item>
+		<Item>b. Chromate conversion coating (SAE AMS-M-3171) post treated with an alkali-resistant paint or resin coating system. Alternate for general use in non-persistent wet or marine atmosphere; or anodic coating without organic coating system.</Item>
+		<Item>c. Metallic coating, electroless nickel (SAE AMS-C-26074, or MIL-DTL-32119 where applicable) with cadmium overplating (SAE AMS-QQ-P-416). For electrical, thermal conducting purposes, in absence of wet, saline or acidic atmospheric conditions. </Item>
+		<Item>d. Chromate treatment. Suitable for assured condensation-free and acid-free conditions.</Item>
+		<Item>Note: Bare magnesium should not be used.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>B</ActivityCategory>
+		<AlloyType>Zinc</AlloyType>
+		<TreatmentOptions>4</TreatmentOptions>
+		<Item>a. Anodic coating post treated with a paint or resin coating system, primarily for castings.</Item>
+		<Item>b. Chromate conversion coating (MIL-C-17711) post treated with a paint or resin coating system; or anodic coating without organic coating system. For use in non-persistent wet or marine atmosphere.  For electrical, thermal conducting purposes in mild atmospheres in absence of wet, saline, or acidic conditions.</Item>
+		<Item>c. Chromate conversion coating without paint or resin coating system.</Item>
+		<Item>Note:  Bare, plated zinc should not be used in a marine environment.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>C</ActivityCategory>
+		<AlloyType>Beryllium</AlloyType>
+		<TreatmentOptions>2</TreatmentOptions>		
+		<Item>a. Chromate conversion coating (SAE AMS-QQ-P-416, SAE AMS-C-8837 or SAE AMS-C-81562) post-treated with a paint or resin coating system.</Item>
+		<Item>b. Chromate conversion coating without organic coating system. For use in non-persistent wet or marine atmosphere.  For electrical, thermal conducting purposes in mild atmospheres in absence of wet, saline or acidic conditions. Recommended for beryllium in high temperature applications to forestall catastrophic oxidation in oxygen containing atmosphere.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>D</ActivityCategory>
+		<AlloyType>Aluminum</AlloyType>
+		<TreatmentOptions>4</TreatmentOptions>		
+		<Item>a. Anodic coating (MIL-A-8625) post treated with a paint or resin coating system.</Item>
+		<Item>b. Chromate conversion coating (MIL-DTL-5541) post treated with a paint or resin coating system; or anodic coating, sealed, with resin seal (when porous castings are used, impregnated with resin prior to surface treating and finishing).</Item>
+		<Item>Chromate conversion coating without paint or resin coating system, for electrical, thermal conducting purposes in mild atmospheres in absence of saline, alkaline or acidic conditions.</Item>
+		<Item>c. Bare aluminum - may be used when surface treating would interfere with application, under conditions free of salinity or extended wetness, or when high corrosion resistant alloys are used.  Faying edges should be sealed to prevent crevice corrosion.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>E</ActivityCategory>
+		<AlloyType>Aluminum*</AlloyType>
+		<TreatmentOptions>4</TreatmentOptions>		
+		<Item>a. Anodic coating (MIL-A-8625) post treated with a paint or resin coating system.</Item>
+		<Item>b. Chromate conversion coating (MIL-DTL-5541) post treated with a paint or resin coating system; or anodic coating, sealed, with resin seal (when porous castings are used, impregnated with resin prior to surface treating and finishing).</Item>
+		<Item>c. Chromate conversion coating without paint or resin coating system, for electrical, thermal conducting purposes in mild atmospheres in absence of saline, alkaline or acidic conditions.</Item>
+		<Item>d. Bare aluminum - may be used when surface treating would interfere with application, under conditions free of salinity or extended wetness, or when high corrosion resistant alloys are used.  Faying edges should be sealed to prevent crevice corrosion.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>F</ActivityCategory>
+		<AlloyType>Carbon Steel</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Metallic coating (e.g., sacrificial Zn or Cd,  with supplemental passivation or surface treatment or non-sacrificial, e.g., Cu or Ni), with a paint or resin coating system. For steels of strengths greater than 220 ksi metallic coatings should be applied by nonelectrolytic methods.  For steels of strengths up to 220 ksi metallic coatings may be applied electrolytically, but the steel should be stress relieved before plating and hydrogen embrittlement relieved after plating.</Item>
+		<Item>b. Metallic coating (e.g., sacrificial Zn or Cd, with supplemental passivation or surface treatment or non-sacrificial, e.g., Cu or Ni) ,without paint or resin coating system, for direct metallic contact or for achieving least potential difference between joined metals.  For metals of strengths greater than 220 ksi, metallic coating, if required, should be applied by non-electrolytic methods.</Item>
+		<Item>c. Zinc phosphate conversion coating (TT-C-490) post treated with a paint or resin coating system.  Caution, if a phosphate coating is used on steels of strengths between 150 to 220 ksi, stress relief is required prior to phosphating and hydrogen embrittlement relief is required after phosphating.  Zinc phosphate coatings are prohibited for steels of strength greater than 220 ksi.</Item>
+		<Item>d. Pretreatment primer (MIL-C-8514) post treated with a paint or resin coating system.</Item>
+		<Item>e. Heavy phosphate conversion coating (MIL-DTL-16232) post treated with a supplemental treatment.  Not for steels of strengths greater than 220 ksi.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>G</ActivityCategory>
+		<AlloyType>Cast Iron*</AlloyType>
+		<TreatmentOptions>2</TreatmentOptions>		
+		<Item>a. Coat with paint or resin coating system. Electroplated coatings should be "flowed" prior to applying coating system.</Item>
+		<Item>b. Electroplate with other metal to reduce the electropotential difference of metals being joined, where direct contact of metals is required for electrical purposes.</Item>					
+	</Data>		
+	<Data>
+		<ActivityCategory>H</ActivityCategory>
+		<AlloyType>Lead</AlloyType>
+		<TreatmentOptions>2</TreatmentOptions>		
+		<Item>a. Coat with paint or resin coating system. Electroplated coatings should be "flowed" prior to applying coating system.</Item>
+		<Item>b. Electroplate with other metal to reduce the electropotential difference of metals being joined, where direct contact of metals is required for electrical purposes.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>I</ActivityCategory>
+		<AlloyType>Martensitic or Ferritic Stainless Steel</AlloyType>
+		<TreatmentOptions>3</TreatmentOptions>		
+		<Item>a. Apply paint or resin coating system.</Item>
+		<Item>b. May be electroplated, or used bare for use in non-persistent wet or marine atmosphere, and for electrical or thermal conducting purposes.  Faying edges to be sealed to prevent crevice corrosion.</Item>
+		<Item>Note: Steels with chromium contents in the region of 12 percent will undergo considerable surface staining and limited rusting in corrosive environments, but on the whole are appreciably less corroded than carbon steels.</Item>					
+	</Data>		
+	<Data>
+		<ActivityCategory>K</ActivityCategory>
+		<AlloyType>Austenitic Stainless Steel</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Apply metallic coating as may be required to minimize electrical potential difference between the metals to be joined and apply paint or resin coating system, primarily to diminish ion contamination from metals of this group onto more anodic metals to which they might be joined, thereby diminishing potential damage to the more anodic metal.</Item>
+		<Item>b. Apply metallic coating (as "a" above), use without paint or resin coating system, for electrical or thermal conducting purposes. May be expedient to overcoat completed assembly with paint or resin.</Item>
+		<Item>c. Apply paint or resin coating system and seal faying edges.</Item>
+		<Item>d. Use bare and seal faying edges for electrical and thermal conducting purposes, if more anodic metals are not directly joined or in close proximity to receive rundown of surface condensate.</Item>
+		<Item>e. Select galvanically compatible metals required to be coupled for high temperature applications, where metallic coatings may not be useful and paint or resin coatings are not practical.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>L</ActivityCategory>
+		<AlloyType>Brass</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Apply metallic coating as may be required to minimize electrical potential difference between the metals to be joined and apply paint or resin coating system, primarily to diminish ion contamination from metals of this group onto more anodic metals to which they might be joined, thereby diminishing potential damage to the more anodic metal.</Item>
+		<Item>b. Apply metallic coating (as "a" above), use without paint or resin coating system, for electrical or thermal conducting purposes. May be expedient to overcoat completed assembly with paint or resin.</Item>
+		<Item>c. Apply paint or resin coating system and seal faying edges.</Item>
+		<Item>d. Use bare and seal faying edges for electrical and thermal conducting purposes, if more anodic metals are not directly joined or in close proximity to receive rundown of surface condensate.</Item>
+		<Item>e. Select galvanically compatible metals required to be coupled for high temperature applications, where metallic coatings may not be useful and paint or resin coatings are not practical.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>M</ActivityCategory>
+		<AlloyType>Bronze</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Apply metallic coating as may be required to minimize electrical potential difference between the metals to be joined and apply paint or resin coating system, primarily to diminish ion contamination from metals of this group onto more anodic metals to which they might be joined, thereby diminishing potential damage to the more anodic metal.</Item>
+		<Item>b. Apply metallic coating (as "a" above), use without paint or resin coating system, for electrical or thermal conducting purposes. May be expedient to overcoat completed assembly with paint or resin.</Item>
+		<Item>c. Apply paint or resin coating system and seal faying edges.</Item>
+		<Item>d. Use bare and seal faying edges for electrical and thermal conducting purposes, if more anodic metals are not directly joined or in close proximity to receive rundown of surface condensate.</Item>
+		<Item>e. Select galvanically compatible metals required to be coupled for high temperature applications, where metallic coatings may not be useful and paint or resin coatings are not practical.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>N</ActivityCategory>
+		<AlloyType>Brass</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Apply metallic coating as may be required to minimize electrical potential difference between the metals to be joined and apply paint or resin coating system, primarily to diminish ion contamination from metals of this group onto more anodic metals to which they might be joined, thereby diminishing potential damage to the more anodic metal.</Item>
+		<Item>b. Apply metallic coating (as "a" above), use without paint or resin coating system, for electrical or thermal conducting purposes. May be expedient to overcoat completed assembly with paint or resin.</Item>
+		<Item>c. Apply paint or resin coating system and seal faying edges.</Item>
+		<Item>d. Use bare and seal faying edges for electrical and thermal conducting purposes, if more anodic metals are not directly joined or in close proximity to receive rundown of surface condensate.</Item>
+		<Item>e. Select galvanically compatible metals required to be coupled for high temperature applications, where metallic coatings may not be useful and paint or resin coatings are not practical.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>O</ActivityCategory>
+		<AlloyType>Copper</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Apply metallic coating as may be required to minimize electrical potential difference between the metals to be joined and apply paint or resin coating system, primarily to diminish ion contamination from metals of this group onto more anodic metals to which they might be joined, thereby diminishing potential damage to the more anodic metal.</Item>
+		<Item>b. Apply metallic coating (as "a" above), use without paint or resin coating system, for electrical or thermal conducting purposes. May be expedient to overcoat completed assembly with paint or resin.</Item>
+		<Item>c. Apply paint or resin coating system and seal faying edges.</Item>
+		<Item>d. Use bare and seal faying edges for electrical and thermal conducting purposes, if more anodic metals are not directly joined or in close proximity to receive rundown of surface condensate.</Item>
+		<Item>e. Select galvanically compatible metals required to be coupled for high temperature applications, where metallic coatings may not be useful and paint or resin coatings are not practical.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>P</ActivityCategory>
+		<AlloyType>Nickel</AlloyType>
+		<TreatmentOptions>5</TreatmentOptions>		
+		<Item>a. Apply metallic coating as may be required to minimize electrical potential difference between the metals to be joined and apply paint or resin coating system, primarily to diminish ion contamination from metals of this group onto more anodic metals to which they might be joined, thereby diminishing potential damage to the more anodic metal.</Item>
+		<Item>b. Apply metallic coating (as "a" above), use without paint or resin coating system, for electrical or thermal conducting purposes. May be expedient to overcoat completed assembly with paint or resin.</Item>
+		<Item>c. Apply paint or resin coating system and seal faying edges.</Item>
+		<Item>d. Use bare and seal faying edges for electrical and thermal conducting purposes, if more anodic metals are not directly joined or in close proximity to receive rundown of surface condensate.</Item>
+		<Item>e. Select galvanically compatible metals required to be coupled for high temperature applications, where metallic coatings may not be useful and paint or resin coatings are not practical.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>Q</ActivityCategory>
+		<AlloyType>Titanium</AlloyType>
+		<TreatmentOptions>4</TreatmentOptions>		
+		<Item>a. Anodize, for anti-galling and wear resistance.</Item>
+		<Item>b. Apply metallic coating (Cd, Zn prohibited, Ag over Ni acceptable) post-treated with a paint or resin coating system.</Item>
+		<Item>c. Apply metallic coating (Cd, Zn prohibited, Ag over Ni acceptable), seal faying edges. For electrical or thermal conducting purposes.</Item>
+		<Item>d. May be used bare with faying edges sealed in contact with metals other than magnesium, zinc or cadmium; for electrical or thermal conducting purposes.</Item>					
+	</Data>
+	<Data>
+		<ActivityCategory>R</ActivityCategory>
+		<AlloyType>Silver</AlloyType>
+		<TreatmentOptions>3</TreatmentOptions>		
+		<Item>a. Silver or silver plated parts to be used as electrical, open-close contact points, plugs and receptacles should be plated over with rhodium, palladium or gold.</Item>
+		<Item>b. May be used in stationary components of electrical assemblies, e.g., connectors, printed circuits, but should be enveloped by sulfur-free conformal coatings.</Item>
+		<Item>c. Apply chromate conversion coating post treated with a corrosion inhibiting fluid film to parts of electrical plugs, receptacles, etc.</Item>	
+	</Data>	
+	<Data>
+		<ActivityCategory>S</ActivityCategory>
+		<AlloyType>Gold</AlloyType>
+		<TreatmentOptions>1</TreatmentOptions>		
+		<Item>Use bare, with compound sealant at edges of dissimilar metal joint, or by enveloping dissimilar metal joint in conformal coatings, where feasible.</Item>					
+	</Data>	
+	<Data>
+		<ActivityCategory>T</ActivityCategory>
+		<AlloyType>Graphite</AlloyType>
+		<TreatmentOptions>2</TreatmentOptions>		
+		<Item>a. Plate graphite to minimize electrical potential difference between graphite and metal to be joined to it.  Seal faying edges to preclude corrosion at contacting surface of the metal member, if service is electrical, or apply conformal coating.</Item>
+		<Item>b. May be used bare in electrical or thermal conducting service, conditions permitting. Seal faying edges.</Item>					
+	</Data>		
+</Root>
+
+
+
+
+

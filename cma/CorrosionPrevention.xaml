@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="CorrosionModel.CorrosionPrevention"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CorrosionModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="650" Height="650">
+
+    <Grid Width="650" Height="650">
+        <ScrollViewer x:Name="LeftVScroll" Width="300" Height="500" VerticalScrollBarVisibility="Visible" VerticalScrollMode="Enabled" FontFamily="Segoe UI" Margin="10,0,330,10">
+            <RichTextBlock x:Name="AnodeRecommendationTextBlock" Height="1000" Margin="0,0,0,0" Width="300" FontFamily="Segoe UI" TextWrapping="Wrap" FontStretch="Normal" MaxLines="124">
+                <Paragraph FontFamily="Segoe UI">
+                    <Run Text="Recommendations" FontFamily="Segoe UI"/>
+                </Paragraph>
+            </RichTextBlock>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="RightVScroll" Width="300" Height="500" VerticalScrollBarVisibility="Visible" VerticalScrollMode="Enabled" FontFamily="Segoe UI" Margin="330,0,10,10">
+            <RichTextBlock x:Name="CathodeRecommendationTextBlock" Height="1000" Margin="0,0,0,0" Width="300" TextWrapping="Wrap" FontFamily="Segoe UI" FontStretch="Normal" MaxLines="124">
+                <Paragraph>
+                    <Run Text="Recommendations" FontFamily="Segoe UI"/>
+                </Paragraph>
+            </RichTextBlock>
+        </ScrollViewer>
+
+        <TextBlock x:Name="AnodeName" HorizontalAlignment="Left" Margin="20,39,0,0" Text="Anode" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Height="28" Width="300" FontFamily="Segoe UI" TextAlignment="Center"/>
+        <TextBlock x:Name="TitleBlock" HorizontalAlignment="Center" Margin="0,10,0,0" Text="MIL-STD-889C Appendix A - Corrosion prevention treatments" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI" Height="30" Width="630" FontWeight="Bold" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="330,40,0,0" Text="Cathode" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="28" TextAlignment="Center" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Button x:Name="ReturnButton" Content="Return" Margin="289,609,0,0" VerticalAlignment="Top" Width="60" Height="28" Click="ReturnButton_Click"/>
+
+    </Grid>
+</Page>
