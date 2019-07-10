@@ -1,4 +1,4 @@
-# Corrosion Model
+# Corrosion Model 6
 <img src = "https://github.com/sap8b/CorrosionModel/blob/master/CM6_Logo.png" align = "right" width = "200" height = "200">
 
 The purpose of this project is to provide a shortcut for basic corrosion insight for a variety of galvanic couples between different metals, alloys, and materials.  
