@@ -16,7 +16,7 @@ It was originally published in 1969 and subsequently updated in 1976 and in 2016
 ## Project Goals
 This project aims to achieve the following goals:
 * Provide the user with a list of different materials that can be selected to be combined into a galvanic couple
-* Provide an estimate of the respective, isolated, corrosion potentials for the two materials (currently only from seawater expossure)
+* Provide an estimate of the respective, isolated, corrosion potentials for the two materials (currently only from seawater exposure)
 * Provide an estimate of the corrosion potential difference between the materials.  This provides an estimate of the overpotential available to drive corrosion, though no kinetics information is provided.
 
 <img src = "https://github.com/sap8b/CorrosionModel/blob/master/Table_I_image2.png" align = "right">
