@@ -5,8 +5,11 @@ Serves as a repository for multiple applications related to corrosion modeling.
 
 ## 1. EIS Data Analysis
 This project (found in the eis-analysis folder) was developed to facilitate the analysis of electrochemical impedance spectroscopy (EIS) data obtained from potentiostatic EIS experiments.
+
 **Note:** The code has not been tested to determine if it works with galvanostatic EIS data.
+
 The main function depends on files contained in the following sub-directories:
+
 *	"Circuit Element Models"
 *	"Equivalent Circuit Models"
 *	"Fitting Algorithms"
