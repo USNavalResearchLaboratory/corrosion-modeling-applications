@@ -85,9 +85,11 @@ Two examples of the polarization curves for the same material but with different
 |a|b|
 |---|---|
 |![Figure2a](readme_assets/pcm_readme_assets/readmeFigure2a.png)|![Figure2b](readme_assets/pcm_readme_assets/readmeFigure2b.png)|
+|c|d|
+|---|---|
 |![Figure2c](readme_assets/pcm_readme_assets/readmeFigure2c.png)|![Figure2d](readme_assets/pcm_readme_assets/readmeFigure2d.png)|
 
-Figure 2. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
+Figure 2. a. Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5oC, pH = 3, and a flow velocity of 5 m/s. b. Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. c. Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. d. Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
 
 ## 3. Pipe Spool Galvanic Couple Modeling
 Stuff
