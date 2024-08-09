@@ -7,11 +7,13 @@ The main function depends on files contained in the following sub-directories:
 *	"Circuit Element Models"
 *	"Equivalent Circuit Models"
 *	"Fitting Algorithms"
+
 Data files are expected to be found in a "Data" directory. Fit results are stored in a "Fit" directory.
 All functions and classes are written in MATLAB®.
 
 ### Main Function
 This function serves as the entry point for the project to analyze and fit EIS data. It can be customized depending on the physical system the EIS data was collected from, but it needs to perform the following actions:
+
 *	Clear the command window, all figures, and all variables from the workspce.
 *	Add the paths to the sub-directories containing the functions for the equivalent circuit impedance calculations and other supporting classes.
 *	Create a cell array of data filenames
@@ -19,6 +21,7 @@ This function serves as the entry point for the project to analyze and fit EIS d
 *	Instantiate an instance of the eisFitController class for each datafile, pass the data to the constructor as well as the equivalent circuit type, and initial guess of the fit parameter values
 
 Definitions for the variables in the Main function are provided below:
+
 *	datafilenames = cell arrray containinng filenames of the raw Gamry data files
 *	selectedEquivalentCircuit = character vector specifying the equivalent circuit to be used to fit the data. Available circuits are listed in the following sub-section
 *	vectorOfInitialParameterEstimates = array of values for the initial parameter estimates
@@ -42,7 +45,7 @@ Undamaged Coating|UndamagedCoating|3|
 Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 1a and Figure 1b, respectively.
 
 |a|b|
-|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure2Readme.png" width = "200" height = "200">|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure3Readme.png" align = "right" width = "200" height = "200">|
+|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure2Readme.png" width = "200" height = "200">|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure3readme.png" align = "right" width = "200" height = "200">|
 
 ## Polarization Curve Modeling
 Stuff
