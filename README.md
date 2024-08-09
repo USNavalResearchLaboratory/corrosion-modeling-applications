@@ -1,5 +1,5 @@
-# Read these first
-Serves as a repository for multiple applications related to corrosion modeling.
+# Corrosion Modeling and Analysis Applications
+Serves as a repository for multiple applications related to corrosion modeling and analysis of experimental data.
 
 ---
 
