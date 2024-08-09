@@ -1,4 +1,4 @@
-# Corrosion Modeling Applications
+# Read these first
 Serves as a repository for multiple applications related to corrosion modeling.
 
 ---
