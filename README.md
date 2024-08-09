@@ -49,6 +49,25 @@ Examples of the output text with the fit parameter values and a Bode plot of the
 |![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
 
 Figure 1. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
+
+### Principal Supporting Functions and Classes
+The principal supporting function that is used by the model is the eisFitController function. This function initiates and calls the important functions for performing the equivalent circuit fit of the EIS data and then displays the results.
+ 
+**eisFitController**
+This function calls the specified equivalent circuit model that will fit the data and passes the initial parameter set estimate to the fitting function. It also establishes the constratint limts on the fit parameters for the simplex algorithm and calls the fitting function. Lastly, it stores the results of the fit in output files. Fit parameter values are output to the command window.
+
+_Function inputs_
+
+* T = instance of eisdata class
+* fType = name of the equivalent circuit model to be used to analyze the data
+* beta0 = array of values for the initial guess for the fit
+* fitDirectory = directory where fit results are stored
+* legendForPlotString = string of descriptions for the data on the plot
+
+_Function outputs_
+
+* Files with fit values and list of fit parameters to the command window
+
 ## 2. Polarization Curve Modeling
 Stuff
 ## 3. Pipe Spool Galvanic Couple Modeling
