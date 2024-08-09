@@ -119,7 +119,30 @@ Alloys specifically included in this version of the code:
 ---
 
 ## 3. Pipe Spool Galvanic Couple Modeling
-Stuff
+Physics-based and response surface models that are used to calculate the galvanic interactions between 2 pipe spools composed of different materials and exposed to a user-specified electrolyte, as shown in Figure 2. 
+
+||
+|---|
+
+Figure 2. Galvanic couple between pipe spools of different materials. 
+
+The pipe spools are simplified to 2-dimensional interactions by assuming axial and radial symmetry.
+The polarization curves that are used for the electrode boundary conditions in this work are modeled using the functions and procedures developed in the "Polarization Curve Modeling" project.
+Record of Revisions:
+•	Created - January 2023
+•	Last revision: 30-Jul-2024
+Main Function
+This example function serves as the entry point to the code for modeling the galvanic interaction between two pipe spools. It must accomplish the following actions:
+•	Clear the command window, all figures, and all variables from the workspace.
+•	Ensure the code can find supporting classes in the respective sub-folders
+•	Provide paths to the raw data and any other model results (if needed)
+•	Instantiate a PipeLoopModel object
+•	Define the properties of the pipe spools and the computational cell properties
+•	Define the various environmental conditions for generating the polarization curves
+•	Instantiate a GalvanicCorrosion object
+•	Iterate through the environmental conditions to define and plot the defined polarization curves.
+Examples of the polarization curve calculations for the different materials and the potential distribution are shown in  Figure 3a and Figure 3b, respectively.
+
 
 ---
 
