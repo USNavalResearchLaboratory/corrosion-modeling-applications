@@ -121,7 +121,8 @@ Alloys specifically included in this version of the code:
 ## 3. Pipe Spool Galvanic Couple Modeling
 Physics-based and response surface models that are used to calculate the galvanic interactions between 2 pipe spools composed of different materials and exposed to a user-specified electrolyte, as shown in Figure 2. 
 
-||
+
+|![Figure3](readme_assets/PLM_readme_assets/readmeFigure3.png)|
 |---|
 
 Figure 2. Galvanic couple between pipe spools of different materials. 
