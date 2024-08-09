@@ -1,5 +1,5 @@
 ## Corrosion Model 6
-<img src = "https://github.com/sap8b/CorrosionModel/blob/master/readme_assets/cm6_readme_assets/CM6_Logo.png" align = "right" width = "200" height = "200">
+<img src = "https://github.com/sap8b/CorrosionModel/blob/master/CM6_Logo.png" align = "right" width = "200" height = "200">
 
 The purpose of this project is to provide a shortcut for basic corrosion insight for a variety of galvanic couples between different metals, alloys, and materials.  
 
@@ -19,7 +19,7 @@ This project aims to achieve the following goals:
 * Provide an estimate of the respective, isolated, corrosion potentials for the two materials (currently only from seawater exposure)
 * Provide an estimate of the corrosion potential difference between the materials.  This provides an estimate of the overpotential available to drive corrosion, though no kinetics information is provided.
 
-<img src = "https://github.com/sap8b/CorrosionModel/blob/master/readme_assets/cm6_readme_assets/Table_I_image2.png" align = "right">
+<img src = "https://github.com/sap8b/CorrosionModel/blob/master/Table_I_image2.png" align = "right">
 
 * Provide an estimate, obtained from Table 1 (see image to the right) on pg. 6 of MIL-STD-889C, of the relative compatibility of the different materials in three different environments:
   1. Marine atmopshere
