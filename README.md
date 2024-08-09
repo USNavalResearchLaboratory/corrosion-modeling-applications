@@ -54,6 +54,7 @@ Figure 1. a. Example output from the fitting routine. b.Bode plot of the impedan
 The principal supporting function that is used by the model is the eisFitController function. This function initiates and calls the important functions for performing the equivalent circuit fit of the EIS data and then displays the results.
  
 **eisFitController**
+
 This function calls the specified equivalent circuit model that will fit the data and passes the initial parameter set estimate to the fitting function. It also establishes the constratint limts on the fit parameters for the simplex algorithm and calls the fitting function. Lastly, it stores the results of the fit in output files. Fit parameter values are output to the command window.
 
 _Function inputs_
