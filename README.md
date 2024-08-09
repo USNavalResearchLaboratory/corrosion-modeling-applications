@@ -28,6 +28,7 @@ Available Equivalent Circuits:
 Use Table 1 to specify the equivalent circuit impedance function to use in the fitting routine.  In the provided code example, it can be seen that ‘ModifiedRandles’ was the circuit that was selected.
 
 Table 1. Available equivalent circuit impedance functions for fitting to EIS data.  The 2nd column lists the value for the selectedEquivalentCircuit class instance that is created for each datafile.  The 3rd column lists the number of initial parameter values that must be passed to the fitting function.
+
 Circuit Name|Name to pass to the EISFitController Instance|Number of fit parameters needed in   vector
 Undamaged Coating|UndamagedCoating|3
 |---|
