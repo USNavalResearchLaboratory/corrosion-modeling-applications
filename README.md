@@ -1,7 +1,42 @@
 # Corrosion Modeling Applications
 This repository seerves as a collection point for several different applications related to corrosion modeling.
 ## EIS Data Analysis
-Stuff
+This project (found in the eis-analysis folder) was developed to facilitate the analysis of electrochemical impedance spectroscopy (EIS) data obtained from potentiostatic EIS experiments.
+**Note:** The code has not been tested to determine if it works with galvanostatic EIS data.
+The main function depends on files contained in the following sub-directories:
+•	"Circuit Element Models"
+•	"Equivalent Circuit Models"
+•	"Fitting Algorithms"
+Data files are expected to be found in a "Data" directory. Fit results are stored in a "Fit" directory.
+All functions and classes are written in MATLAB®.
+### Main Function
+This function serves as the entry point for the project to analyze and fit EIS data. It can be customized depending on the physical system the EIS data was collected from, but it needs to perform the following actions:
+•	Clear the command window, all figures, and all variables from the workspce.
+•	Add the paths to the sub-directories containing the functions for the equivalent circuit impedance calculations and other supporting classes.
+•	Create a cell array of data filenames
+•	Iterate through the filenames to extract the impedance data.
+•	Instantiate an instance of the eisFitController class for each datafile, pass the data to the constructor as well as the equivalent circuit type, and initial guess of the fit parameter values
+
+Definitions for the variables in the Main function are provided below:
+•	datafilenames = cell arrray containinng filenames of the raw Gamry data files
+•	selectedEquivalentCircuit = character vector specifying the equivalent circuit to be used to fit the data. Available circuits are listed in the following sub-section
+•	vectorOfInitialParameterEstimates = array of values for the initial parameter estimates
+•	legendString = character array of the descriptions of the data to be plotted on the output plots
+
+Available Equivalent Circuits:
+Use Table 1 to specify the equivalent circuit impedance function to use in the fitting routine.  In the provided code example, it can be seen that ‘ModifiedRandles’ was the circuit that was selected.
+Table 1. Available equivalent circuit impedance functions for fitting to EIS data.  The 2nd column lists the value for the selectedEquivalentCircuit class instance that is created for each datafile.  The 3rd column lists the number of initial parameter values that must be passed to the fitting function.
+Circuit Name	Name to pass to the EISFitController Instance	Number of fit parameters needed in   vector
+Undamaged Coating	UndamagedCoating	3
+Modified Undamaged Coating	ModifiedUndamagedCoating	4
+Randles	Randles	5
+Modified Randles	ModifiedRandles	6
+Nested Randles Coating Defect	NestedRandlesCoatingDefect	5
+Rapid Electrochemical Assessment of Paint (REAP)	REAP	6
+Modified REAP	ModifiedREAP	7
+
+Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 1 and Figure 2, respectively.
+
 ## Polarization Curve Modeling
 Stuff
 ## Pipe Spool Galvanic Couple Modeling
