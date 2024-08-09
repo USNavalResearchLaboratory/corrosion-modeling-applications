@@ -42,7 +42,7 @@ Undamaged Coating|UndamagedCoating|3|
 Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 1a and Figure 1b, respectively.
 
 |a|b|
-|<img src = "https://github.com/sap8b/CorrosionModel/blob/master/CM6_Logo.png" align = "right" width = "200" height = "200">|<img src = "https://github.com/sap8b/CorrosionModel/blob/master/CM6_Logo.png" align = "right" width = "200" height = "200">|
+|<img src = "https://github.com/sap8b/CorrosionModel/blob/master/readme_assets/eis_readme_assets/Figure2Readme.png" width = "200" height = "200">|<img src = "https://github.com/sap8b/CorrosionModel/blob/master/readme_assets/eis_readme_assets/Figure3Readme.png" align = "right" width = "200" height = "200">|
 
 ## Polarization Curve Modeling
 Stuff
