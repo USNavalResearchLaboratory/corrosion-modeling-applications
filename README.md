@@ -1,3 +1,11 @@
+# Corrosion Modeling Applications
+This repository seerves as a collection point for several different applications related to corrosion modeling.
+## EIS Data Analysis
+Stuff
+## Polarization Curve Modeling
+Stuff
+## Pipe Spool Galvanic Couple Modeling
+Stuff
 ## Corrosion Model 6
 <img src = "https://github.com/sap8b/CorrosionModel/blob/master/CM6_Logo.png" align = "right" width = "200" height = "200">
 
