@@ -149,6 +149,18 @@ Examples of the polarization curve calculations for the different materials and 
 
 _Figure 4. a._ Individual polarization curves and combined galvanic corrosion response for the modeled I625 and wrought CuNi pipe spools. _b._ Comparison of the measured and modeled potential distributions for a pipe spool galvanic couple between I625 and wrought CuNi in flowing seawater.
 
+### Principal Sub-Functions and Classes
+The principal supporting classes and sub-functions that are used in the model include the following:
+
+* PipeLoopModel - a class that contains model predictions and experimental results for comparisons.
+* galvanicCorrosion - a class that contains functions for performing the potential distribution calculation for the galvanic couple between the pipe spools.
+
+#### Pipe Loop Model
+This class serves as a holding center for gathering experimental data and model outcomes from files.
+
+#### Galvanic Corrosion Simulation
+This class defines the computational cell and contains the static functions that perform the Symmetric Over-Relaxation (SOR) calculation to obtain the potential distribution by solving the Laplace equation in 2 dimensions.
+
 ---
 
 ## 4. Corrosion Experimental Data Analysis
