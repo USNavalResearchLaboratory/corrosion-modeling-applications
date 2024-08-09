@@ -9,9 +9,7 @@ Stuff
 ## Corrosion Model 6
 <img src = "https://github.com/sap8b/CorrosionModel/blob/master/CM6_Logo.png" align = "right" width = "200" height = "200">
 
-The purpose of this project is to provide a shortcut for basic corrosion insight for a variety of galvanic couples between different metals, alloys, and materials.  
-
-STRN: 19-1231-2025
+This application provides a shortcut for basic corrosion insight for a variety of galvanic couples between different metals, alloys, and materials.  
 
 ### Background
 The origin of project grew out of the desire to provide useful corrosion information contained in unclassified, unrestricted distribution, standards that still seemed to be difficult to find if you didn't know what you were looking for.  For example, the basis of this project is: 
