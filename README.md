@@ -73,7 +73,7 @@ _Function outputs_
 ---
 
 ## 2. Polarization Curve Modeling
-Polarization curves can be obtained across a range of temperatures, concentrations, pH values, and electrolyte flow velocities. Note, though, that the simplified nature of the polarization curves obtained from this modeling approach arises becuase these are intended to serve as boundary conditions for FEM of complex parts and components exposed to corrosive environments. The BCs on the electrode surfaces in those calculations are restricted to single-valued functions. Thus, observed polarization behavior that results in active-passive transitions, for example, will not be captured by these models.
+Using this code (found in the polarization-curve-modeling folder), polarization curves can be obtained across a range of temperatures, concentrations, pH values, and electrolyte flow velocities. Note, though, that the simplified nature of the polarization curves obtained from this modeling approach arises becuase these are intended to serve as boundary conditions for FEM of complex parts and components exposed to corrosive environments. The BCs on the electrode surfaces in those calculations are restricted to single-valued functions. Thus, observed polarization behavior that results in active-passive transitions, for example, will not be captured by these models.
 
 ### Main Function
 Unlike the classes that are described in the following section, the main function is not unique.  It serves as the entry point to the code for modeling a polarization curve. Whatever this function is named, however, it must accomplish the following actions:
@@ -119,7 +119,7 @@ Alloys specifically included in this version of the code:
 ---
 
 ## 3. Pipe Spool Galvanic Couple Modeling
-Physics-based and response surface models that are used to calculate the galvanic interactions between 2 pipe spools composed of different materials and exposed to a user-specified electrolyte, as shown in Figure 3. 
+Physics-based and response surface models (found in the pipe-spool-model folder) are used to calculate the galvanic interactions between 2 pipe spools composed of different materials and exposed to a user-specified electrolyte, as shown in Figure 3. 
 
 
 |![Figure3](readme_assets/PLM_readme_assets/readmeFigure3.png)|
