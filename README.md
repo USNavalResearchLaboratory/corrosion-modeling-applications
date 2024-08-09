@@ -42,7 +42,7 @@ Undamaged Coating|UndamagedCoating|3|
 Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 1a and Figure 1b, respectively.
 
 |a|b|
-|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure2Readme.png" width = "200" height = "200">|<img src = "https://github.com/sap8b/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure3Readme.png" align = "right" width = "200" height = "200">|
+|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure2Readme.png" width = "200" height = "200">|<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/eis_readme_assets/Figure3Readme.png" align = "right" width = "200" height = "200">|
 
 ## Polarization Curve Modeling
 Stuff
@@ -67,7 +67,7 @@ This project aims to achieve the following goals:
 * Provide an estimate of the respective, isolated, corrosion potentials for the two materials (currently only from seawater exposure)
 * Provide an estimate of the corrosion potential difference between the materials.  This provides an estimate of the overpotential available to drive corrosion, though no kinetics information is provided.
 
-<img src = "https://github.com/sap8b/corrosion-modeling-applications/readme_assets/cm6_readme_assets/Table_I_image2.png" align = "right">
+<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/readme_assets/cm6_readme_assets/Table_I_image2.png" align = "right">
 
 * Provide an estimate, obtained from Table 1 (see image to the right) on pg. 6 of MIL-STD-889C, of the relative compatibility of the different materials in three different environments:
   1. Marine atmopshere
