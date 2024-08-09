@@ -88,7 +88,31 @@ Two examples of the polarization curves for the same material but with different
 |c|d|
 |![Figure2c](readme_assets/pcm_readme_assets/readmeFigure2c.png)|![Figure2d](readme_assets/pcm_readme_assets/readmeFigure2d.png)|
 
-Figure 2. a. Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5oC, pH = 3, and a flow velocity of 5 m/s. b. Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. c. Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. d. Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
+Figure 2. a. Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. b. Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. c. Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. d. Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
+
+### Principal Sub-Functions and Classes
+The principal supporting classes and sub-functions that are used in the model include the following:
+
+* Constants - a class that defines a number of conversion values for converting units as well as a number of physical parameters for electrochemical calculations.
+* PolarizationCurveModel - a class that creates an object to calculate and plot a polarization curve.
+
+#### Constants and Conversion Factors
+This class contains variables storing physical constant values for use in electrochemical calculations.
+
+#### Polarization Curve Class
+This class serves as the template to create an object that can calculate and plot a polarization curve.
+Alloys specifically included in this version of the code:
+
+*	HY 80
+*	HY 100
+*	SS 316
+*	Ti
+* CuNi (Wrought, 70-30 alloy)
+*	I625
+
+**Note** This version of the code contains estimates for reaction properties for the alloys specified above. If additional alloys are to be considered, their model reaction properties must be included in the Polarization Curve class, or this version of the code must be changed so the values can be obtained elsewhere (see Roadmap).
+
+
 
 ## 3. Pipe Spool Galvanic Couple Modeling
 Stuff
