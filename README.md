@@ -1,5 +1,6 @@
 # Corrosion Modeling Applications
-This repository seerves as a collection point for several different applications related to corrosion modeling.
+Serves as a repository for multiple applications related to corrosion modeling.
+
 ## 1. EIS Data Analysis
 This project (found in the eis-analysis folder) was developed to facilitate the analysis of electrochemical impedance spectroscopy (EIS) data obtained from potentiostatic EIS experiments.
 **Note:** The code has not been tested to determine if it works with galvanostatic EIS data.
@@ -51,7 +52,6 @@ Examples of the output text with the fit parameter values and a Bode plot of the
 Figure 1. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
 
 ### Principal Supporting Functions and Classes
- 
 #### eisFitController
 
 This function calls the specified equivalent circuit model that will fit the data and passes the initial parameter set estimate to the fitting function. It also establishes the constratint limts on the fit parameters for the simplex algorithm and calls the fitting function. Lastly, it stores the results of the fit in output files. Fit parameter values are output to the command window.
