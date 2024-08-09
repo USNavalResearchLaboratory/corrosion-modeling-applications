@@ -69,7 +69,25 @@ _Function outputs_
 * Files with fit values and list of fit parameters to the command window
 
 ## 2. Polarization Curve Modeling
-Stuff
+Polarization curves can be obtained across a range of temperatures, concentrations, pH values, and electrolyte flow velocities. Note, though, that the simplified nature of the polarization curves obtained from this modeling approach arises becuase these are intended to serve as boundary conditions for FEM of complex parts and components exposed to corrosive environments. The BCs on the electrode surfaces in those calculations are restricted to single-valued functions. Thus, observed polarization behavior that results in active-passive transitions, for example, will not be captured by these models.
+
+### Main Function
+Unlike the classes that are described in the following section, the main function is not unique.  It serves as the entry point to the code for modeling a polarization curve. Whatever this function is named, however, it must accomplish the following actions:
+
+*	Clear the command window, all figures, and all variables from the workspace.
+*	Instantiate an instance of the Constants class.
+*	Define the potential region of interest
+*	Define the various environmental conditions for generating the polarization curves
+*	Iterate through the environmental conditions to construct instances of the PolarizationCurveModel class and call the plotting function for the defined polarization curves.
+
+Two examples of the polarization curves for the same material but with different environmental conditions that can be generated are shown in Figure 2.
+
+|a|b|
+|---|---|
+|![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
+
+Figure 2. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
+
 ## 3. Pipe Spool Galvanic Couple Modeling
 Stuff
 ## 4. Corrosion Model 6
