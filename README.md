@@ -47,7 +47,7 @@ Examples of the output text with the fit parameter values and a Bode plot of the
 |a|b|
 |---|---|
 |![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
-
+Figure 1. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
 ## Polarization Curve Modeling
 Stuff
 ## Pipe Spool Galvanic Couple Modeling
