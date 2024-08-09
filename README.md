@@ -84,7 +84,8 @@ Two examples of the polarization curves for the same material but with different
 
 |a|b|
 |---|---|
-|![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
+|![Figure2a](readme_assets/pcm_readme_assets/Figure2Readme.png)|![Figure2b](readme_assets/pcm_readme_assets/Figure3readme.png)|
+|![Figure2a](readme_assets/pcm_readme_assets/Figure2Readme.png)|![Figure2b](readme_assets/pcm_readme_assets/Figure3readme.png)|
 
 Figure 2. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
 
