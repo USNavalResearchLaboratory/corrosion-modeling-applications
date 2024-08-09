@@ -51,7 +51,7 @@ Examples of the output text with the fit parameter values and a Bode plot of the
 |---|---|
 |![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
 
-Figure 1. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
+_Figure 1. a._ Example output from the fitting routine. _b._ Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
 
 ### Principal Supporting Functions and Classes
 #### eisFitController
@@ -92,7 +92,7 @@ Two examples of the polarization curves for the same material but with different
 |c|d|
 |![Figure2c](readme_assets/pcm_readme_assets/readmeFigure2c.png)|![Figure2d](readme_assets/pcm_readme_assets/readmeFigure2d.png)|
 
-Figure 2. a. Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. b. Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. c. Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. d. Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
+_Figure 2. a._ Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. _b._ Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. _c._ Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. _d._ Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
 
 ### Principal Sub-Functions and Classes
 The principal supporting classes and sub-functions that are used in the model include the following:
