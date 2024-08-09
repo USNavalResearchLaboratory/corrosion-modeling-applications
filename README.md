@@ -1,6 +1,6 @@
 # Corrosion Modeling Applications
 This repository seerves as a collection point for several different applications related to corrosion modeling.
-## EIS Data Analysis
+## 1. EIS Data Analysis
 This project (found in the eis-analysis folder) was developed to facilitate the analysis of electrochemical impedance spectroscopy (EIS) data obtained from potentiostatic EIS experiments.
 **Note:** The code has not been tested to determine if it works with galvanostatic EIS data.
 The main function depends on files contained in the following sub-directories:
@@ -49,11 +49,11 @@ Examples of the output text with the fit parameter values and a Bode plot of the
 |![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
 
 Figure 1. a. Example output from the fitting routine. b.Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
-## Polarization Curve Modeling
+## 2. Polarization Curve Modeling
 Stuff
-## Pipe Spool Galvanic Couple Modeling
+## 3. Pipe Spool Galvanic Couple Modeling
 Stuff
-## Corrosion Model 6
+## 4. Corrosion Model 6
 <img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/cm6_readme_assets/CM6_Logo.png" align = "right" width = "200" height = "200">
 
 This application provides a shortcut for basic corrosion insight for a variety of galvanic couples between different metals, alloys, and materials.  
