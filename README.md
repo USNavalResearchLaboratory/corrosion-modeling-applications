@@ -29,20 +29,20 @@ Use Table 1 to specify the equivalent circuit impedance function to use in the f
 
 Table 1. Available equivalent circuit impedance functions for fitting to EIS data.  The 2nd column lists the value for the selectedEquivalentCircuit class instance that is created for each datafile.  The 3rd column lists the number of initial parameter values that must be passed to the fitting function.
 
-Circuit Name|Name to pass to the EISFitController Instance|Number of fit parameters needed in   vector
-Undamaged Coating|UndamagedCoating|3
+Circuit Name|Name to pass to the EISFitController Instance|Number of fit parameters needed in   vector|
+Undamaged Coating|UndamagedCoating|3|
 |---|
-Modified Undamaged Coating|ModifiedUndamagedCoating|4
+Modified Undamaged Coating|ModifiedUndamagedCoating|4|
 |---|
-Randles|Randles|5
+Randles|Randles|5|
 |---|
-Modified Randles|ModifiedRandles|6
+Modified Randles|ModifiedRandles|6|
 |---|
-Nested Randles Coating Defect|NestedRandlesCoatingDefect|5
+Nested Randles Coating Defect|NestedRandlesCoatingDefect|5|
 |---|
-Rapid Electrochemical Assessment of Paint (REAP)|REAP|6
+Rapid Electrochemical Assessment of Paint (REAP)|REAP|6|
 |---|
-Modified REAP|ModifiedREAP|7
+Modified REAP|ModifiedREAP|7|
 |---|
 
 Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 1 and Figure 2, respectively.
