@@ -169,7 +169,7 @@ This class defines the computational cell and contains the static functions that
 ## 4. Experimental Data Analysis
 This MATLAB GUI application and supporting datafile extraction functions  were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
 
-**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry(R) experiments: 
+**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry:R: experiments: 
 
 |**Experiment Type**|**Gamry Label**|
 |---|---|
@@ -177,6 +177,13 @@ This MATLAB GUI application and supporting datafile extraction functions  were d
 |Cyclic polarization measurement|CYCPOL|
 |Potentiodynamic polarization measurement|POTDYN|
 |Potentiostatic electrochemical impedance spectroscopy|EISPOT|
+
+The main application depends on the following functions that handle analysis of the Gamry:R: datafiles:
+
+*	AnalyzeGamryCORPOTData.m
+*	AnalyzeGamryCYCPOLData_2.m
+*	AnalyzeGamryEISData.m
+*	AnalyzeGamryPOTDYNData.m
 
 ---
 
