@@ -4,7 +4,7 @@ Serves as a repository for multiple applications related to corrosion modeling a
 ---
 ## 1. Experimental Data Analysis
 <img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/cdp_readme_assets/MLApp1.png" align = "right" width = "200" height = "200">
-This MATLAB GUI application and supporting datafile extraction functions (found in the eis-analysis folder) were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
+This MATLAB GUI application and supporting datafile extraction functions (found in the experimental-data-analysis folder) were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
 
 **Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry:registered: experiments: 
 
@@ -40,8 +40,10 @@ _Figure 2._ Location for the newly-installed MATLAB App.
 ### App Functionality
 Interactions with the app GUI generally flow from upper-left to lower-right of the Interaction Panel.  A general sequence of steps is shown in Figure 3 and described below.
 
-|![Figure7](readme_assets/cdp_readme_assets/MATLABAppGUI.png)|
+|![Figure3](readme_assets/cdp_readme_assets/MATLABAppGUI.png)|
 |---|
+
+_Figure 3._ Numbered sequence for interacting with the GUI to load and plot raw datafiles.
 
 1.  Click on ‘File’, which expands a toolstrip showing ‘New’ – which clears all variables, ‘Close’ – which closes the app, and ‘Select Data Directory’.
 2.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
