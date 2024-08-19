@@ -167,6 +167,7 @@ This class defines the computational cell and contains the static functions that
 ---
 
 ## 4. Experimental Data Analysis
+<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/cdp_readme_assets/MLApp1.png" align = "right" width = "200" height = "200">
 This MATLAB GUI application and supporting datafile extraction functions  were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
 
 **Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry :registered: experiments: 
@@ -187,11 +188,12 @@ The main application depends on the following functions that handle analysis of 
 
 ### Installation
 The application is installed by clicking on the “Install App” button on the MATLAB Apps tab in the command window, as shown in Fig. 5:
+
 |---|
 |![Figure5](readme_assets/cdp_readme_assets/MATLABNav1.png)|
 _Figure 5._ Install a MATLAB App.
 
-
+Navigate to the folder where the app installer is located, and it will automatically be added to the apps dropdown list, under the My Apps section in the command window.
 
 ---
 
