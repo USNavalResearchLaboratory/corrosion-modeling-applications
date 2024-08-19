@@ -170,7 +170,7 @@ This class defines the computational cell and contains the static functions that
 <img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/cdp_readme_assets/MLApp1.png" align = "right" width = "200" height = "200">
 This MATLAB GUI application and supporting datafile extraction functions  were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
 
-**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry :registered: experiments: 
+**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry:registered: experiments: 
 
 |**Experiment Type**|**Gamry Label**|
 |---|---|
@@ -179,7 +179,7 @@ This MATLAB GUI application and supporting datafile extraction functions  were d
 |Potentiodynamic polarization measurement|POTDYN|
 |Potentiostatic electrochemical impedance spectroscopy|EISPOT|
 
-The main application depends on the following functions that handle analysis of the Gamry :registered: datafiles:
+The main application depends on the following functions that handle analysis of the Gamry:registered: datafiles:
 
 *	AnalyzeGamryCORPOTData.m
 *	AnalyzeGamryCYCPOLData_2.m
@@ -189,11 +189,25 @@ The main application depends on the following functions that handle analysis of 
 ### Installation
 The application is installed by clicking on the “Install App” button on the MATLAB Apps tab in the command window, as shown in Fig. 5:
 
-|---|
 |![Figure5](readme_assets/cdp_readme_assets/MATLABNav1.png)|
+|---|
+
 _Figure 5._ Install a MATLAB App.
 
-Navigate to the folder where the app installer is located, and it will automatically be added to the apps dropdown list, under the My Apps section in the command window.
+Navigate to the folder where the app installer is located, and it will automatically be added to the apps dropdown list, under the My Apps section in the command window, as shown in Fig. 6.
+
+|![Figure6](readme_assets/cdp_readme_assets/MATLABNav2.png)|
+|---|
+
+_Figure 6._ Location for the newly-installed MATLAB App.
+
+### App Functionality
+Interactions with the app GUI generally flow from upper-left to lower-right of the Interaction Panel.  A general sequence of steps is shown in Figure 8 and described below.
+
+1.  Click on ‘File’, which expands a toolstrip showing ‘New’ – which clears all variables, ‘Close’ – which closes the app, and ‘Select Data Directory’.
+  1.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
+  2.	*Note:*  The app currently does not search subfolders, so all data needs to be in the selected folder.
+2.	Once a directory has been selected, clicking on the down arrow opens a drop-down list to select the type of experimental data to be plotted.  
 
 ---
 
