@@ -211,17 +211,21 @@ Interactions with the app GUI generally flow from upper-left to lower-right of t
 2.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
     1.	*Note:*  The app currently does not search subfolders, so all data needs to be in the selected folder.
 3.	Once a directory has been selected, clicking on the down arrow opens a drop-down list, as shown below, to select the type of experimental data to be plotted.
-
+    1. The app will scan the selected directory for experimental data files that match the type selected.  Any matching files that are found are added to the text box in step 4.
+     
 |![Figure8](readme_assets/cdp_readme_assets/MATLABNav3.png)|
 |---|
-
-    1. The app will scan the selected directory for experimental data files that match the type selected.  Any matching files that are found are added to the text box in step 4.
 
 4.  If multiple files are present in the text box, clicking the filename highlights its name and adds it to the list of files to be plotted.  The order the files are clicked is the order they are added to the plot.
 5.	Enter descriptive text into the ‘Legend Info’ text box for each plotted datafile, separating each description by a comma.  These will label the symbols plotting the data in the following step.
 6.	Clicking the ‘Plot’ button displays the data on one or two axes, depending on the type of data, in the Plot Panel.
 7.	Clicking on the ‘Save Plot’ button opens a ‘Save File’ dialog that allows the filename to be entered and a selection of image types to save the file.  It also automatically generates CSV files for each data file shown in the plot.
 
+### Principal Supporting Functions
+The experimental datafile analysis supporting functions all follow the same general procedure, so only one is described below.
+
+#### Analyze Gamry POTDYN Data Function
+This function loads a Gamry DTA file obtained from a potentiodynamic polarization experiment. It extracts the open-circuit potential data and the polarization data from their respective areas of the file. It will also extract exposed area value from AREA entry in the file. The area value and the OCP and polarization data are returned from the function as a variable and a MATLAB table, respectively.
 
 ---
 
