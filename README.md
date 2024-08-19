@@ -205,9 +205,20 @@ _Figure 6._ Location for the newly-installed MATLAB App.
 Interactions with the app GUI generally flow from upper-left to lower-right of the Interaction Panel.  A general sequence of steps is shown in Figure 8 and described below.
 
 1.  Click on ‘File’, which expands a toolstrip showing ‘New’ – which clears all variables, ‘Close’ – which closes the app, and ‘Select Data Directory’.
-  1.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
-  2.	*Note:*  The app currently does not search subfolders, so all data needs to be in the selected folder.
-2.	Once a directory has been selected, clicking on the down arrow opens a drop-down list to select the type of experimental data to be plotted.  
+2.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
+    1.	*Note:*  The app currently does not search subfolders, so all data needs to be in the selected folder.
+3.	Once a directory has been selected, clicking on the down arrow opens a drop-down list to select the type of experimental data to be plotted.
+
+|![Figure7](readme_assets/cdp_readme_assets/MATLABNav3.png)|
+|---|
+
+The app will scan the selected directory for experimental data files that match the type selected.  Any matching files that are found are added to the text box in step 4.
+
+4.  If multiple files are present in the text box, clicking the filename highlights its name and adds it to the list of files to be plotted.  The order the files are clicked on is the order they are added to the plot.
+5.	Enter descriptive text into the ‘Legend Info’ text box for each plotted datafile, separating each description by a comma.  These will label the symbols plotting the data in the following step.
+6.	Clicking the ‘Plot’ button displays the data on one or two axes, depending on the type of data, in the Plot Panel.
+7.	Clicking on the ‘Save Plot’ button opens a ‘Save File’ dialog that allows the filename to be entered and a selection of image types to save the file.  It also automatically generates CSV files for each data file shown in the plot.
+
 
 ---
 
