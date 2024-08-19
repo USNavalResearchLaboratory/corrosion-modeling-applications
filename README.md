@@ -167,7 +167,16 @@ This class defines the computational cell and contains the static functions that
 ---
 
 ## 4. Experimental Data Analysis
-TBP
+This MATLAB GUI application and supporting datafile extraction functions  were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
+
+**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry(R) experiments: 
+
+|**Experiment Type**|**Gamry Label**|
+|---|---|
+|Open-circuit potential measurement|CORPOT|
+|Cyclic polarization measurement|CYCPOL|
+|Potentiodynamic polarization measurement|POTDYN|
+|Potentiostatic electrochemical impedance spectroscopy|EISPOT|
 
 ---
 
