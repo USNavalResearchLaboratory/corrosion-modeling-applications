@@ -92,27 +92,38 @@ function eisAnalysisMain
     base_fits_dir = 'Fits';    
     ext1 = '.dta';    
     ext2 = '.DTA';
-    datafilenames = {'EIS_PureNi_Anodic_24hrOCP__495_Trial3'};
-    legendString = 'AM - 504h NSW';
 
+    % Add the desired filenames to the datafilenames cell array and
+    % individual entries for the descriptive legends for each entry. The
+    % legend values will also be used to create output fit files.
+    datafilenames = {'EIS_PureNi_Anodic_24hrOCP__495_Trial3'};
+    legendStrings = {'AM - 504h NSW'};
+    i = 1;
     for fn = datafilenames
         ffn1 = fullfile(base_data_dir,strcat(char(fn),ext1));
         ffn2 = fullfile(base_data_dir,strcat(char(fn),ext2)); 
+        % Specify the equvalent circuit model to be used for the fit
         selectedEquivalentCircuit = 'ModifiedRandles';
+        % The initial parameter estimate vector must contain the same
+        % number of parameter values as are free parameters in the circuit
+        % model.  For examples, the Modified Randles circuit has 6 free
+        % parameters, so the initial parameter estimate vector needs to
+        % contain 6 initial guesses.
         vectorOfInitialParameterEstimates = [1.0e1,3.0e4,1.0e-4,0.8,7.0e2,1.5];        
         good = 0;
         if isfile(ffn1)
             [~,eisdata] = AnalyzeGamryEISData(ffn1);
             good = 1;
-        elseif isfile (ffn2)
+        elseif isfile(ffn2)
             [~,eisdata] = AnalyzeGamryEISData(ffn2);
             good = 1;            
         end        
         if good == 1            
-            eisFitController(eisdata,selectedEquivalentCircuit,vectorOfInitialParameterEstimates,base_fits_dir,legendString);
+            eisFitController(eisdata,selectedEquivalentCircuit,vectorOfInitialParameterEstimates,base_fits_dir,char(legendStrings{i}));
         else
             fprintf("File %s not found.",fn,"/n");            
         end
+        i = i + 1;
     end        
 end
 %% Principal Sub-Functions and Classes
