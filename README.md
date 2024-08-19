@@ -2,8 +2,69 @@
 Serves as a repository for multiple applications related to corrosion modeling and analysis of experimental data.
 
 ---
+## 1. Experimental Data Analysis
+<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/cdp_readme_assets/MLApp1.png" align = "right" width = "200" height = "200">
+This MATLAB GUI application and supporting datafile extraction functions (found in the eis-analysis folder) were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
 
-## 1. EIS Data Analysis
+**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry:registered: experiments: 
+
+|**Experiment Type**|**Gamry Label**|
+|---|---|
+|Open-circuit potential measurement|CORPOT|
+|Cyclic polarization measurement|CYCPOL|
+|Potentiodynamic polarization measurement|POTDYN|
+|Potentiostatic electrochemical impedance spectroscopy|EISPOT|
+
+The main application depends on the following functions that handle analysis of the Gamry:registered: datafiles:
+
+*	AnalyzeGamryCORPOTData.m
+*	AnalyzeGamryCYCPOLData_2.m
+*	AnalyzeGamryEISData.m
+*	AnalyzeGamryPOTDYNData.m
+
+### Installation
+The application is installed by clicking on the “Install App” button on the MATLAB Apps tab in the command window, as shown in Fig. 1:
+
+|![Figure1](readme_assets/cdp_readme_assets/MATLABNav1.png)|
+|---|
+
+_Figure 1._ Install a MATLAB App.
+
+Navigate to the folder where the app installer is located, and it will automatically be added to the apps dropdown list, under the My Apps section in the command window, as shown in Fig. 2.
+
+|![Figure2](readme_assets/cdp_readme_assets/MATLABNav2.png)|
+|---|
+
+_Figure 2._ Location for the newly-installed MATLAB App.
+
+### App Functionality
+Interactions with the app GUI generally flow from upper-left to lower-right of the Interaction Panel.  A general sequence of steps is shown in Figure 3 and described below.
+
+|![Figure7](readme_assets/cdp_readme_assets/MATLABAppGUI.png)|
+|---|
+
+1.  Click on ‘File’, which expands a toolstrip showing ‘New’ – which clears all variables, ‘Close’ – which closes the app, and ‘Select Data Directory’.
+2.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
+    1.	*Note:*  The app currently does not search subfolders, so all data needs to be in the selected folder.
+3.	Once a directory has been selected, clicking on the down arrow opens a drop-down list, as shown below, to select the type of experimental data to be plotted.
+    1. The app will scan the selected directory for experimental data files that match the type selected.  Any matching files that are found are added to the text box in step 4.
+     
+|![Figure3](readme_assets/cdp_readme_assets/MATLABNav3.png)|
+|---|
+
+4.  If multiple files are present in the text box, clicking the filename highlights its name and adds it to the list of files to be plotted.  The order the files are clicked is the order they are added to the plot.
+5.	Enter descriptive text into the ‘Legend Info’ text box for each plotted datafile, separating each description by a comma.  These will label the symbols plotting the data in the following step.
+6.	Clicking the ‘Plot’ button displays the data on one or two axes, depending on the type of data, in the Plot Panel.
+7.	Clicking on the ‘Save Plot’ button opens a ‘Save File’ dialog that allows the filename to be entered and a selection of image types to save the file.  It also automatically generates CSV files for each data file shown in the plot.
+
+### Principal Supporting Functions
+The experimental datafile analysis supporting functions all follow the same general procedure, so only one is described below.
+
+#### Analyze Gamry POTDYN Data Function
+This function loads a Gamry DTA file obtained from a potentiodynamic polarization experiment. It extracts the open-circuit potential data and the polarization data from their respective areas of the file. It will also extract exposed area value from AREA entry in the file. The area value and the OCP and polarization data are returned from the function as a variable and a MATLAB table, respectively.
+
+---
+## 2. EIS Data Analysis
 This project (found in the eis-analysis folder) was developed to facilitate the analysis of electrochemical impedance spectroscopy (EIS) data obtained from potentiostatic EIS experiments.
 
 **Note:** The code has not been tested to determine if it works with galvanostatic EIS data.
@@ -48,13 +109,13 @@ Undamaged Coating|UndamagedCoating|3|
 |Rapid Electrochemical Assessment of Paint (REAP)|REAP|6|
 |Modified REAP|ModifiedREAP|7|
 
-Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 1a and Figure 1b, respectively.
+Examples of the output text with the fit parameter values and a Bode plot of the EIS data and fit are shown in Figure 4a and Figure 4b, respectively.
 
 |a|b|
 |---|---|
 |![Figure1a](readme_assets/eis_readme_assets/Figure2Readme.png)|![Figure1b](readme_assets/eis_readme_assets/Figure3readme.png)|
 
-_Figure 1. a._ Example output from the fitting routine. _b._ Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
+_Figure 4. a._ Example output from the fitting routine. _b._ Bode plot of the impedance modulus vs potential oscillation frequency and the phase of the response vs the potential oscillation frequency.  Open symbols indicate data, the line indicates the fit.
 
 ### Principal Supporting Functions and Classes
 #### eisFitController
@@ -75,7 +136,7 @@ _Function outputs_
 
 ---
 
-## 2. Polarization Curve Modeling
+## 3. Polarization Curve Modeling
 Using this code (found in the polarization-curve-modeling folder), polarization curves can be obtained across a range of temperatures, concentrations, pH values, and electrolyte flow velocities. Note, though, that the simplified nature of the polarization curves obtained from this modeling approach arises becuase these are intended to serve as boundary conditions for FEM of complex parts and components exposed to corrosive environments. The BCs on the electrode surfaces in those calculations are restricted to single-valued functions. Thus, observed polarization behavior that results in active-passive transitions, for example, will not be captured by these models.
 
 ### Main Function
@@ -87,15 +148,15 @@ Unlike the classes that are described in the following section, the main functio
 *	Define the various environmental conditions for generating the polarization curves
 *	Iterate through the environmental conditions to construct instances of the PolarizationCurveModel class and call the plotting function for the defined polarization curves.
 
-Two examples of the polarization curves for the same material but with different environmental conditions that can be generated are shown in Figure 2.
+Two examples of the polarization curves for the same material but with different environmental conditions that can be generated are shown in Figure 5.
 
 |a|b|
 |---|---|
-|![Figure2a](readme_assets/pcm_readme_assets/readmeFigure2a.png)|![Figure2b](readme_assets/pcm_readme_assets/readmeFigure2b.png)|
+|![Figure5a](readme_assets/pcm_readme_assets/readmeFigure2a.png)|![Figure5b](readme_assets/pcm_readme_assets/readmeFigure2b.png)|
 |c|d|
-|![Figure2c](readme_assets/pcm_readme_assets/readmeFigure2c.png)|![Figure2d](readme_assets/pcm_readme_assets/readmeFigure2d.png)|
+|![Figure5c](readme_assets/pcm_readme_assets/readmeFigure2c.png)|![Figure5d](readme_assets/pcm_readme_assets/readmeFigure2d.png)|
 
-_Figure 2. a._ Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. _b._ Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. _c._ Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. _d._ Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
+_Figure 5. a._ Modeled polarization curve for a 316 stainless steel in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. _b._ Modeled polarization curve for a 316 stainless steel in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s. _c._ Modeled polarization curve for a CuNi 70-30 alloy in 0.02 M NaCl solution at 5<sup>o</sup>C, pH = 3, and a flow velocity of 5 m/s. _d._ Modeled polarization curve for a CuNi 70-30 alloy in 0.6 M NaCl solution at 25<sup>o</sup>C, pH = 7, and a flow velocity of 5 m/s.
 
 ### Principal Sub-Functions and Classes
 The principal supporting classes and sub-functions that are used in the model include the following:
@@ -114,7 +175,7 @@ Alloys specifically included in this version of the code:
 *	HY 100
 *	SS 316
 *	Ti
-* CuNi (Wrought, 70-30 alloy)
+*	CuNi (Wrought, 70-30 alloy)
 *	I625
 
 **Note** This version of the code contains estimates for reaction properties for the alloys specified above. If additional alloys are to be considered, their model reaction properties must be included in the Polarization Curve class, or this version of the code must be changed so the values can be obtained elsewhere (see Roadmap).
@@ -122,13 +183,13 @@ Alloys specifically included in this version of the code:
 ---
 
 ## 3. Pipe Spool Galvanic Couple Modeling
-Physics-based and response surface models (found in the pipe-spool-model folder) are used to calculate the galvanic interactions between 2 pipe spools composed of different materials and exposed to a user-specified electrolyte, as shown in Figure 3. 
+Physics-based and response surface models (found in the pipe-spool-model folder) are used to calculate the galvanic interactions between 2 pipe spools composed of different materials and exposed to a user-specified electrolyte, as shown in Figure 6. 
 
 
-|![Figure3](readme_assets/PLM_readme_assets/readmeFigure3.png)|
+|![Figure6](readme_assets/PLM_readme_assets/readmeFigure3.png)|
 |---|
 
-_Figure 3._ Galvanic couple between pipe spools of different materials. 
+_Figure 6._ Galvanic couple between pipe spools of different materials. 
 
 The pipe spools are simplified to 2-dimensional interactions by assuming axial and radial symmetry. The polarization curves that are used for the electrode boundary conditions in this work were calculated using the functions and procedures developed in the "Polarization Curve Modeling" project.
 
@@ -144,13 +205,13 @@ This example function serves as the entry point to the code for modeling the gal
 *	Instantiate a GalvanicCorrosion object
 *	Iterate through the environmental conditions to define and plot the defined polarization curves.
 
-Examples of the polarization curve calculations for the different materials and the potential distribution are shown in  Figure 4a and Figure 4b, respectively.
+Examples of the polarization curve calculations for the different materials and the potential distribution are shown in  Figure 7a and Figure 7b, respectively.
 
 |a|b|
 |---|---|
-|![Figure4a](readme_assets/PLM_readme_assets/readmeFigure3a.png)|![Figure4b](readme_assets/PLM_readme_assets/readmeFigure3b.png)|
+|![Figure7a](readme_assets/PLM_readme_assets/readmeFigure3a.png)|![Figure7b](readme_assets/PLM_readme_assets/readmeFigure3b.png)|
 
-_Figure 4. a._ Individual polarization curves and combined galvanic corrosion response for the modeled I625 and wrought CuNi pipe spools. _b._ Comparison of the measured and modeled potential distributions for a pipe spool galvanic couple between I625 and wrought CuNi in flowing seawater.
+_Figure 7. a._ Individual polarization curves and combined galvanic corrosion response for the modeled I625 and wrought CuNi pipe spools. _b._ Comparison of the measured and modeled potential distributions for a pipe spool galvanic couple between I625 and wrought CuNi in flowing seawater.
 
 ### Principal Sub-Functions and Classes
 The principal supporting classes and sub-functions that are used in the model include the following:
@@ -163,69 +224,6 @@ This class serves as a holding center for gathering experimental data and model 
 
 #### Galvanic Corrosion Simulation
 This class defines the computational cell and contains the static functions that perform the Symmetric Over-Relaxation (SOR) calculation to obtain the potential distribution by solving the Laplace equation in 2 dimensions.
-
----
-
-## 4. Experimental Data Analysis
-<img src = "https://github.com/USNavalResearchLaboratory/corrosion-modeling-applications/blob/master/readme_assets/cdp_readme_assets/MLApp1.png" align = "right" width = "200" height = "200">
-This MATLAB GUI application and supporting datafile extraction functions  were developed to support the analysis of raw datafiles obtained from potentiostats as the output from several common corrosion experiments. 
-
-**Note:** Version 2.0 of the code has been successfully tested on datafiles from the following types of Gamry:registered: experiments: 
-
-|**Experiment Type**|**Gamry Label**|
-|---|---|
-|Open-circuit potential measurement|CORPOT|
-|Cyclic polarization measurement|CYCPOL|
-|Potentiodynamic polarization measurement|POTDYN|
-|Potentiostatic electrochemical impedance spectroscopy|EISPOT|
-
-The main application depends on the following functions that handle analysis of the Gamry:registered: datafiles:
-
-*	AnalyzeGamryCORPOTData.m
-*	AnalyzeGamryCYCPOLData_2.m
-*	AnalyzeGamryEISData.m
-*	AnalyzeGamryPOTDYNData.m
-
-### Installation
-The application is installed by clicking on the “Install App” button on the MATLAB Apps tab in the command window, as shown in Fig. 5:
-
-|![Figure5](readme_assets/cdp_readme_assets/MATLABNav1.png)|
-|---|
-
-_Figure 5._ Install a MATLAB App.
-
-Navigate to the folder where the app installer is located, and it will automatically be added to the apps dropdown list, under the My Apps section in the command window, as shown in Fig. 6.
-
-|![Figure6](readme_assets/cdp_readme_assets/MATLABNav2.png)|
-|---|
-
-_Figure 6._ Location for the newly-installed MATLAB App.
-
-### App Functionality
-Interactions with the app GUI generally flow from upper-left to lower-right of the Interaction Panel.  A general sequence of steps is shown in Figure 7 and described below.
-
-|![Figure7](readme_assets/cdp_readme_assets/MATLABAppGUI.png)|
-|---|
-
-1.  Click on ‘File’, which expands a toolstrip showing ‘New’ – which clears all variables, ‘Close’ – which closes the app, and ‘Select Data Directory’.
-2.	Clicking on ‘Select Data Directory’ opens a folder browser dialog box.  Navigate to the folder containing the raw datafiles of interest.
-    1.	*Note:*  The app currently does not search subfolders, so all data needs to be in the selected folder.
-3.	Once a directory has been selected, clicking on the down arrow opens a drop-down list, as shown below, to select the type of experimental data to be plotted.
-    1. The app will scan the selected directory for experimental data files that match the type selected.  Any matching files that are found are added to the text box in step 4.
-     
-|![Figure8](readme_assets/cdp_readme_assets/MATLABNav3.png)|
-|---|
-
-4.  If multiple files are present in the text box, clicking the filename highlights its name and adds it to the list of files to be plotted.  The order the files are clicked is the order they are added to the plot.
-5.	Enter descriptive text into the ‘Legend Info’ text box for each plotted datafile, separating each description by a comma.  These will label the symbols plotting the data in the following step.
-6.	Clicking the ‘Plot’ button displays the data on one or two axes, depending on the type of data, in the Plot Panel.
-7.	Clicking on the ‘Save Plot’ button opens a ‘Save File’ dialog that allows the filename to be entered and a selection of image types to save the file.  It also automatically generates CSV files for each data file shown in the plot.
-
-### Principal Supporting Functions
-The experimental datafile analysis supporting functions all follow the same general procedure, so only one is described below.
-
-#### Analyze Gamry POTDYN Data Function
-This function loads a Gamry DTA file obtained from a potentiodynamic polarization experiment. It extracts the open-circuit potential data and the polarization data from their respective areas of the file. It will also extract exposed area value from AREA entry in the file. The area value and the OCP and polarization data are returned from the function as a variable and a MATLAB table, respectively.
 
 ---
 
