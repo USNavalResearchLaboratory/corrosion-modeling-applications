@@ -29,7 +29,7 @@
 % Record of Revisions: 
 % Created - June 2024
 %
-% Last revision: 12-July-2024
+% Last revision: 27-June-2025
 %
 % Contents
 %
@@ -67,15 +67,23 @@
 % Specify the equivalent circuit impedance function to use for the
 % fitting routine.
 % 
-% Circuit Name,Name to pass to EISFitController,Number of fit parameters
+% Circuit Name = Name to pass to EISFitController,Number of fit parameters
 % needed in $\beta_0$ vector
-% Undamaged Coating, UndamagedCoating,3
-% Modified Undamaged Coating,ModifiedUndamagedCoating,4
-% Randles,Randles,5
-% Modified Randles,ModifiedRandles,6
-% Nested Randles Coating Defect,NestedRandlesCoatingDefect,5
-% Rapid Electrochemical Assessment of Paint (REAP),REAP,6
-% Modified REAP,ModifiedREAP,7
+%
+% Available Equivalent Circuits                         Circuit Name                 Number of Free Parameters
+% =============================                  ==============================      ========================
+% Undamaged Coating                                 UndamagedCoating                             3
+% Modified Undamaged Coating                        ModifiedUndamagedCoating                     4
+% Randles                                           Randles                                      5
+% Modified Randles                                  ModifiedRandles                              6
+% Nested Randles Coating Defect                     NestedRandlesCoatingDefect                   5
+% Rapid Electrochemical Assessment of Paint (REAP)  REAP                                         6
+% Modified REAP                                     ModifiedREAP                                 7
+% 
+% 
+% 
+% For explanations of the circuit models for these equivalent circuits,
+% please go to https://www.mdpi.com/2079-6412/13/7/1285.
 
 function eisAnalysisMain    
     clc;
