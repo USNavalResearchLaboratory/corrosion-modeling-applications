@@ -1,4 +1,4 @@
-function plotBodeEIS(xDataForPlotting_1,yDataForPlotting_1,yDataForPlotting_2,legendstring)
+function plotBodeEIS(fignum,xDataForPlotting_1,yDataForPlotting_1,yDataForPlotting_2,legendstring)
     % =====================================================================
     % Plotting variables
     tick_label_size = 20;
@@ -8,29 +8,32 @@ function plotBodeEIS(xDataForPlotting_1,yDataForPlotting_1,yDataForPlotting_2,le
     axis_line_width = 3;
     marker_size = 4;
     font_weight = 'bold';
-    lines = {'-b','-r','-g'};
+    lines = {'-b','-k','--r'};
     chars1 = {'bo','r+','g*','k.','cx','ms','yd','b^','rv','g<','k>'};
     % =====================================================================
     lowVal = -1000;
+
+    figure(fignum)
+    
     t = tiledlayout(1,2);
     % Zmod vs freq
     axZmod = nexttile(t);
+    xplots = xDataForPlotting_1(:,1);
+    yplots = yDataForPlotting_1(:,1); 
+    plot(axZmod,xplots,yplots,char(chars1{1}),'MarkerSize', marker_size,'LineWidth',  plot_line_width)
     hold(axZmod,'on')
-    for i = 1:2:size(xDataForPlotting_1,2)
+    for i = 2:size(xDataForPlotting_1,2) %2:
         xplots = xDataForPlotting_1(:,i);
-
-        yplots = yDataForPlotting_1(:,i);                        
-        plot(axZmod,xplots,yplots,char(chars1{i}),'MarkerSize', marker_size,'LineWidth',  plot_line_width)
-
-        yplots = yDataForPlotting_1(:,i+1);
-        plot(axZmod,xplots,yplots,char(lines{i+1}),'LineWidth',  plot_line_width)
+        yplots = yDataForPlotting_1(:,i);                               
+        plot(axZmod,xplots,yplots,char(lines{i}),'LineWidth',  plot_line_width)
     end
     xlabel(axZmod,'Frequency (Hz)')
     ylabel(axZmod,'Z_{mod} (\Omega)')
 
-    xlim(axZmod,[1.0e-2 1.0e6])
-    xticks(axZmod,[1e-2 1e-1 1e0 1e1 1e2 1e3 1e4 1e5])
-    xticklabels(axZmod,{'10^{-2}','10^{-1}','10^0','10^1','10^2','10^3','10^4','10^5'})            
+    xlim(axZmod,[1.0e-3 1.0e6])
+    ylim(axZmod,[1.0e2 1.0e11])
+    xticks(axZmod,[1e-3 1e-2 1e-1 1e0 1e1 1e2 1e3 1e4 1e5])
+    xticklabels(axZmod,{'10^{-3}','10^{-2}','10^{-1}','10^0','10^1','10^2','10^3','10^4','10^5'})          
 
     box(axZmod,'on')
     
@@ -52,26 +55,25 @@ function plotBodeEIS(xDataForPlotting_1,yDataForPlotting_1,yDataForPlotting_2,le
 
     % Phase vs freq
     axZphz = nexttile(t);
+    xplots = xDataForPlotting_1(:,1);
+    yplots = yDataForPlotting_2(:,1);        
+    plot(axZphz,xplots,yplots,char(chars1{1}),'MarkerSize', marker_size,'LineWidth',  plot_line_width)    
     hold(axZphz,'on')
     
-    for i = 1:2:size(xDataForPlotting_1,2)
+    for i = 2:size(xDataForPlotting_1,2) %1:
         xplots = xDataForPlotting_1(:,i);
-
-        yplots = yDataForPlotting_2(:,i);        
-        plot(axZphz,xplots,yplots,char(chars1{i}),'MarkerSize', marker_size,'LineWidth',  plot_line_width)
-
-        yplots = yDataForPlotting_2(:,i+1);        
-        plot(axZphz,xplots,yplots,char(lines{i+1}),'LineWidth', plot_line_width)        
+        yplots = yDataForPlotting_2(:,i);                
+        plot(axZphz,xplots,yplots,char(lines{i}),'LineWidth', plot_line_width)        
     end
 
     xlabel(axZphz,'Frequency (Hz)')
     ylabel(axZphz,'Phase (^o)')
 
-    xlim(axZphz,[1.0e-2 1.0e6])
+    xlim(axZphz,[1.0e-3 1.0e6])
     ylim(axZphz,[-90 0])
 
-    xticks(axZphz,[1e-2 1e-1 1e0 1e1 1e2 1e3 1e4 1e5])
-    xticklabels(axZphz,{'10^{-2}','10^{-1}','10^0','10^1','10^2','10^3','10^4','10^5'})
+    xticks(axZphz,[1e-3 1e-2 1e-1 1e0 1e1 1e2 1e3 1e4 1e5])
+    xticklabels(axZphz,{'10^{-3}','10^{-2}','10^{-1}','10^0','10^1','10^2','10^3','10^4','10^5'})
 
     box(axZphz,'on')
     % ax = gca;
