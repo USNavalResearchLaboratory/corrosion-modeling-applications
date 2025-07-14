@@ -46,7 +46,6 @@ function [area,eisTable] = AnalyzeGamryEISData(fn)
     end
     fclose(fid);
     varnames = strtrim(string(vars));
-    
     dv = datavals(:,2) > -1;
     datavals2 = datavals(dv,2:size(datavals,2));
     varnames = varnames(2:numel(varnames));
