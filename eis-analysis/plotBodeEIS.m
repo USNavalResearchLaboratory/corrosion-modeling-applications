@@ -12,7 +12,7 @@ function plotBodeEIS(fignum,xDataForPlotting_1,yDataForPlotting_1,yDataForPlotti
     chars1 = {'bo','r+','g*','k.','cx','ms','yd','b^','rv','g<','k>'};
     % =====================================================================
     lowVal = -1000;
-
+    
     figure(fignum)
     
     t = tiledlayout(1,2);
@@ -30,8 +30,8 @@ function plotBodeEIS(fignum,xDataForPlotting_1,yDataForPlotting_1,yDataForPlotti
     xlabel(axZmod,'Frequency (Hz)')
     ylabel(axZmod,'Z_{mod} (\Omega)')
 
-    xlim(axZmod,[1.0e-3 1.0e6])
-    ylim(axZmod,[1.0e2 1.0e11])
+    xlim(axZmod,[1.0e-3 1.0e5])
+    ylim(axZmod,[1.0e1 1.0e8])
     xticks(axZmod,[1e-3 1e-2 1e-1 1e0 1e1 1e2 1e3 1e4 1e5])
     xticklabels(axZmod,{'10^{-3}','10^{-2}','10^{-1}','10^0','10^1','10^2','10^3','10^4','10^5'})          
 

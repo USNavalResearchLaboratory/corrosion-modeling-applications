@@ -4,8 +4,8 @@ function [area,eisTable] = AnalyzeGamryEISData(fn)
     %   experimental parameters from a Gamry potentiostatic electrochemical
     %   impedance spectroscopy (EIS) data file.
     
-    lyric1 = 'AREA'; % Find the recorded area value
-    lyric2 = 'ZCURVE'; % Find the start of the columns of data
+    textToSearchFor_1 = 'AREA'; % Find the recorded area value
+    textToSearchFor_2 = 'ZCURVE'; % Find the start of the columns of data
     
     [fid,msg] = fopen(fn,'rt');
     assert(fid>=3,msg)
@@ -16,12 +16,12 @@ function [area,eisTable] = AnalyzeGamryEISData(fn)
 
     while ~feof(fid)
         st = fgetl(fid);    
-        if contains(st,lyric1)
+        if contains(st,textToSearchFor_1)
             stread = split(st);
             % disp(stread{1,2})
             area = str2double(stread{3,1});    
         end        
-        if contains(st,lyric2)
+        if contains(st,textToSearchFor_2)
             startheader = 1;        
         end
         if startheader == 1

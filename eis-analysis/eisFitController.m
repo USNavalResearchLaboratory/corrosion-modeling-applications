@@ -32,7 +32,7 @@
 % Function outputs 
 % 
 % * Files with fit values and list of fit parameters to the command window
-function finalFItVals = eisFitController(fignum,whichData,T,fType,beta0,fitDirectory,legendForPlotString)
+function finalFItVals = eisFitController(fignum,whichData,T,fType,beta0,fitDirectory,legendForPlotString,plotInitialGuess)
 %%% Branch execution on equivalent circuit type
 % This extended switch statement determines the equivalent circuit fit
 % function, the parameters that will be altered to obtain the fit, the
@@ -299,7 +299,12 @@ function finalFItVals = eisFitController(fignum,whichData,T,fType,beta0,fitDirec
     disp(outputString)
     outputString = newline;
     disp(outputString)      
-    plotBodeEIS(fignum,[T.Freq,T.Freq,T.Freq],[T.Zmod,zMod1,zMod0],[T.Zphz,zPhase1,zPhase0],legendForPlotString)
+    
+    if plotInitialGuess == true
+        plotBodeEIS(fignum,[T.Freq,T.Freq,T.Freq],[T.Zmod,zMod1,zMod0],[T.Zphz,zPhase1,zPhase0],legendForPlotString)
+    else
+        plotBodeEIS(fignum,[T.Freq,T.Freq],[T.Zmod,zMod1],[T.Zphz,zPhase1],legendForPlotString)
+    end
     % ========================
     % Write the fit values and data to an output file
     % ========================
