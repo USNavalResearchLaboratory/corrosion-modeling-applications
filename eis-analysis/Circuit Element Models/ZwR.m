@@ -1,13 +1,15 @@
-function [zm,zr,zi,zp] = ZwR(f,s,B8) %D0,del
-% ZwB - Calculates the impedance of a reflective Warburg element.
+function [zm,zr,zi,zp] = ZwR(f,sigma,B)
+% ZwB - Calculates the impedance of a finite length Warburg element with a
+% reflective boundary
 %
 % Function to calculate the impedance of a reflective Warburg element.
 %
-% Syntax:  [zm,zr,zi,zp] = ZwR(x,s,D0,del)
+% Syntax:  [zm,zr,zi,zp] = ZwR(f,sigma,B)
 %
 % Inputs: 
 % f = vector of frequencies.
-% s = Warburg "capacitance"
+% sigma = Warburg "capacitance"
+% B = del/sqrt(D0)
 % D0 = ionic diffusion coefficeient (cm^2/s)
 % del = diffusion length (cm).
 %  
@@ -31,7 +33,9 @@ function [zm,zr,zi,zp] = ZwR(f,s,B8) %D0,del
 % Laboratory
 % email address: steven.policastro@nrl.navy.mil  
 % Website: 
-% August 2022; Last revision: 23 August 2022
+% August 2022; 
+% Revision: 23 August 2022
+% Last revision: 23 July 2025
 %==========================================================================
     w = (2*pi).*f;
     zr = zeros(size(w));
@@ -43,24 +47,15 @@ function [zm,zr,zi,zp] = ZwR(f,s,B8) %D0,del
     csub = sqrt(1i);
 
     for i = 1:n
-        % a = s/sqrt(w(i));
-        % 
-        % f = sqrt((csub*w(i))/D0)*del;
-        % 
-        % c = tanh(f);
-        % 
-        % d = a*c;
-        % e = d*(1-csub);
-
         % Using the Wikipedia equations! https://en.wikipedia.org/wiki/Warburg_element
         a = (csub*sqrt(w(i)));
-        b = s/a;
-        c = B8; %del/D0;
+        b = sigma/a;
+        c = B; %del/D0;
         d = coth(c*a);
-        e = b*d;        
+        z = b*d;        
         
-        zr(i) = real(e);
-        zi(i) = imag(e);
+        zr(i) = real(z);
+        zi(i) = imag(z);
 
         ztemp(i) = complex(zr(i),zi(i));
         zp(i) = atan(zi(i)/zr(i));

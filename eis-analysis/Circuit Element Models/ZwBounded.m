@@ -1,14 +1,14 @@
-function [zm,zr,zi,zp] = ZwB(f,sigma,B)
-% ZwB - Calculates the impedance of a finite length Warburg element with a
-% transmissive boundary
+function [zm,zr,zi,zp] = ZwBounded(f,sigma,B)
+% ZwBounded - Calculates the impedance of a Warburg element with a finite
+% length diffusion layer thickness.
 %
-% Function to calculate the impedance of a transmissive Warburg element.
+% Function to calculate the impedance of a bounded Warburg element.
 %
-% Syntax:  [zm,zr,zi,zp] = ZwB(x,s,D0,del)
+% Syntax:  [zm,zr,zi,zp] = ZwBounded(f,sigma,B)
 %
 % Inputs: 
 % f = vector of frequencies.
-% s = Warburg "capacitance"
+% sigma = Warburg "capacitance"
 % B = del/sqrt(D0)
 % D0 = ionic diffusion coefficeient (cm^2/s)
 % del = diffusion length (cm).
@@ -31,10 +31,9 @@ function [zm,zr,zi,zp] = ZwB(f,sigma,B)
 % Author:   Steve Policastro, Ph.D., Materials Science
 % Center for Corrosion Science and Engineering, U.S. Naval Research
 % Laboratory
-% email address: steven.policastro@nrl.navy.mil  
+% email address: steven.a.policastro.civ@us.navy.mil  
 % Website: 
-% Created: June 2022
-% Revision: 24 June 2022
+% Created: August 2022
 % Last revision: 23 July 2025
 %==========================================================================
     w = (2*pi).*f;
@@ -45,17 +44,20 @@ function [zm,zr,zi,zp] = ZwB(f,sigma,B)
 
     n = numel(w);
     csub = sqrt(1i);
+    Y0 = 1/(sqrt(2)*sigma);
 
-    for i = 1:n    
-        % Using the Wikipedia equations! https://en.wikipedia.org/wiki/Warburg_element
+    for i = 1:n
+        % Using the equations from Gamry for the bounded Warburg
+        % impedance
+        % https://www.gamry.com/Framework%20Help/HTML5%20-%20Tripane%20-%20Audience%20A/Content/EIS/Theory/Physical%20Electrochemistry%20and%20Circuit%20Elements/Diffusion.htm
         a = (csub*sqrt(w(i)));
-        b = sigma/a;
+        b = (1/Y0)/a;
         c = B; %del/D0;
         d = tanh(c*a);
         z = b*d;
+        
         zr(i) = real(z);
         zi(i) = imag(z);
-
         ztemp(i) = complex(zr(i),zi(i));
         zp(i) = atan(zi(i)/zr(i));
     end
